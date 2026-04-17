@@ -49,7 +49,7 @@ body {
     ),
     var(--backgroundColor0);
 }
-bodt * {
+body * {
   font-family: "Inter", sans-serif;
   color: var(--textColor);
 }
@@ -92,7 +92,6 @@ bodt * {
   border: 0;
   border-radius: 50%;
 
-  position:absolute;
   top: 50%;
   left: 0;
   z-index: 1;
