@@ -1,71 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --textColor: white;
+  --strokeColor: rgba(255, 255, 255, 0.5);
+  --surfaceColor: rgba(255, 255, 255, 0.5);
+  --surgaceColorHover: rgba(0, 0, 0, 0.02);
+  --highlightColor: rgba(255, 255, 255, 0.2);
+  --backgroundColor0: rgb(0, 0, 0);
+  --backgroundColor1: rgba(255, 0, 150, 0.5);
+  --backgroundColor2: rgba(0, 166, 255, 0.5);
+  --switchBgrUrl: url("/assets/moon-stars.svg");
+}
+.light {
+  --textColor: black;
+  --strokeColor: rgba(0, 0, 0, 0.5) --surfaceColor: rgba(0, 0, 0, 0.5);
+  --surgaceColorHover: rgba(0, 0, 0, 0.02);
+  --highlightColor: rgba(0, 0, 0, 0.2);
+  --backgroundColor0: rgb(200, 200, 200);
+  --backgroundColor1: rgba(255, 68, 177, 0.5);
+  --backgroundColor2: rgba(36, 179, 255, 0.5);
+  --switchBgrUrl: url("/assets/sun.svg");
+}
 body {
   height: 100vh;
   background:
     radial-gradient(
       circle at 90% 00%,
-      rgba(255, 0, 150, 0.5),
+      var(--backgroundColor1),
       transparent 45.5%
     ),
     radial-gradient(
       circle at 100% 20%,
-      rgba(0, 166, 255, 0.5),
+      var(--backgroundColor2),
       transparent 45.5%
     ),
     radial-gradient(
       circle at 10% 100%,
-      rgba(255, 0, 150, 0.5),
+      var(--backgroundColor1),
       transparent 45.5%
     ),
     radial-gradient(
       circle at 0% 70%,
-      rgba(00, 170, 255, 0.5),
+      var(--backgroundColor2),
       transparent 45.5%
     ),
-    #050505;
+    var(--backgroundColor0);
 }
-img {
-  width: 25%;
-  border: 3px solid #fff;
-  border-radius: 100%;
-}
-a {
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-}
-a:hover {
-  background-color: linear-gradient(0deg, #ff0099, #00d4ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-ul {
-  color: rgb(255, 255, 255);
-}
-li{
-margin-top: 20px;
-}
-.profile {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 20px;
+bodt * {
+  font-family: "Inter", sans-serif;
+  color: var(--textColor);
 }
 .container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 40px;
+  width: 100%;
+  max-width: 588px;
+  margin: 56px auto 0px;
+  padding: 0 24px;
 }
-#social-links {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
+.profile {
+  text-align: center;
+  padding: 24px;
 }
-#social-links ion-icon {
-  padding-Right: 10px;
+.profile img {
+  width: 112px;
+  border-radius: 100%;
+  box-shadow:
+    -2px -2px 0 var(--strokeColor),
+    2px 2px 0 var(--strokeColor),
+    -2px 2px 0 var(--strokeColor),
+    2px -2px 0 var(--strokeColor);
 }
-footer{
-    color: rgb(255, 255, 255);
+.profile p {
+  font-weight: 500;
+  font-size: 24px;
+  margin-top: 8px;
+}
+.profile a {
+  text-decoration: none;
+}
+#switch {
+  position: relative;
+  width: 64px;
+  margin: 4px auto;
+}
+#switch button {
+  width: 32px;
+  height: 32px;
+  background: white var(--switchBgrUrl) no-repeat center;
+  border: 0;
+  border-radius: 50%;
+
+  position:absolute;
+  top: 50%;
+  left: 0;
+  z-index: 1;
+  transform: translateY(-50%);
+
+  animation: slide-back 0.2s;
+}
+.light #switch button:hover {
+ outline: 8px solid var(--highlightColor);
 }
