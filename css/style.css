@@ -1,0 +1,71 @@
+body {
+  height: 100vh;
+  background:
+    radial-gradient(
+      circle at 90% 00%,
+      rgba(255, 0, 150, 0.5),
+      transparent 45.5%
+    ),
+    radial-gradient(
+      circle at 100% 20%,
+      rgba(0, 166, 255, 0.5),
+      transparent 45.5%
+    ),
+    radial-gradient(
+      circle at 10% 100%,
+      rgba(255, 0, 150, 0.5),
+      transparent 45.5%
+    ),
+    radial-gradient(
+      circle at 0% 70%,
+      rgba(00, 170, 255, 0.5),
+      transparent 45.5%
+    ),
+    #050505;
+}
+img {
+  width: 25%;
+  border: 3px solid #fff;
+  border-radius: 100%;
+}
+a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+a:hover {
+  background-color: linear-gradient(0deg, #ff0099, #00d4ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+ul {
+  color: rgb(255, 255, 255);
+}
+li{
+margin-top: 20px;
+}
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+}
+#social-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+#social-links ion-icon {
+  padding-Right: 10px;
+}
+footer{
+    color: rgb(255, 255, 255);
+}
