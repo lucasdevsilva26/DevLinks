@@ -100,5 +100,5 @@ body * {
   animation: slide-back 0.2s;
 }
 .light #switch button:hover {
- outline: 8px solid var(--highlightColor);
+  outline: 8px solid var(--highlightColor);
 }
