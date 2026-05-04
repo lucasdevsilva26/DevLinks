@@ -24,7 +24,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 O DevLinks é um agregador de links para usar como portfolio online.
 
-- [Acesse o projeto finalizado, online](https://lucasdevsilva26.github.io/devlinks/)
+- [Acesse o projeto finalizado, online](https://github.com/lucasdevsilva26/DevLinks)
 
 ## 🔖 Layout
 
